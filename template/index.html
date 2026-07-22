@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CONFIGURA AQUÍ: metadatos del proyecto -->
+    <title>Nombre del Proyecto — Descripción breve | Tu Nombre</title>
+    <meta name="description" content="Documentación completa del proyecto Nombre del Proyecto: descripción, instalación, uso, arquitectura y ejemplos.">
+    <meta name="author" content="Tu Nombre">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tu-usuario.github.io/nombre-del-proyecto/">
+    <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nombre del Proyecto — Tu Nombre">
+    <meta property="og:description" content="Documentación del proyecto Nombre del Proyecto.">
+    <meta property="og:url" content="https://tu-usuario.github.io/nombre-del-proyecto/">
+    <meta property="og:image" content="https://tu-usuario.github.io/nombre-del-proyecto/assets/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nombre del Proyecto — Tu Nombre">
+    <meta name="twitter:description" content="Documentación del proyecto Nombre del Proyecto.">
+    <meta name="twitter:image" content="https://tu-usuario.github.io/nombre-del-proyecto/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23161513'/><text x='50' y='68' font-size='52' font-family='Georgia' fill='%23FAF9F6' text-anchor='middle'>P</text></svg>">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Librerías -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Estilos del sistema de diseño -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="grain">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar-editorial" aria-label="Navegación del proyecto">
+            <div class="container">
+                <!-- CONFIGURA AQUÍ: enlace de vuelta al portafolio principal -->
+                <a class="navbar-brand" href="https://tu-usuario.github.io/portafolio/">
+                    Tu<em>Nombre</em><span style="color:var(--accent)">.</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" aria-controls="projectMenu" aria-expanded="false" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="navbar-menu" id="projectMenu">
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                    <li><a href="#instalacion">Instalación</a></li>
+                    <li><a href="#uso">Uso</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+                        <span class="knob"><i class="fas fa-sun"></i></span>
+                    </button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO DEL PROYECTO -->
+        <section id="inicio" class="hero-project" aria-label="Presentación del proyecto">
+            <div class="container">
+                <p class="eyebrow fade-item f-1">Proyecto · 2024</p>
+
+                <h1 class="hero-title">
+                    <span class="reveal-mask d-1"><span>Nombre del</span></span>
+                    <span class="reveal-mask d-2"><span class="font-display"><em>Proyecto</em></span></span>
+                </h1>
+
+                <p class="hero-subtitle fade-item f-2">
+                    <!-- CONFIGURA AQUÍ: resumen del proyecto en una o dos líneas -->
+                    Breve descripción impactante del proyecto: qué problema resuelve,
+                    para quién está pensado y cuál es su valor diferencial.
+                </p>
+
+                <div class="hero-meta fade-item f-2">
+                    <div>
+                        <strong>Rol</strong>
+                        <span>Desarrollador full-stack</span>
+                    </div>
+                    <div>
+                        <strong>Estado</strong>
+                        <span>En producción</span>
+                    </div>
+                    <div>
+                        <strong>Periodo</strong>
+                        <span>2023 — 2024</span>
+                    </div>
+                    <div>
+                        <strong>Cliente</strong>
+                        <span>Proyecto personal</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions fade-item f-3">
+                    <!-- CONFIGURA AQUÍ: enlaces al demo y al repositorio -->
+                    <a href="#" class="btn-editorial btn-solid" target="_blank" rel="noopener">
+                        Ver demo en vivo <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="btn-editorial" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> Repositorio
+                    </a>
+                    <a href="#instalacion" class="btn-editorial">
+                        Documentación <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4 d-none d-md-block fade-item f-3" aria-hidden="true">
+                <div class="scroll-cue"></div>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN -->
+        <section id="descripcion" class="section-pad" aria-labelledby="desc-titulo">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <p class="eyebrow">01 — Descripción</p>
+                        <h2 id="desc-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            El <em class="font-display"><em>problema</em></em> y la solución
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="150">
+                        <!-- CONFIGURA AQUÍ: descripción detallada del proyecto -->
+                        <p style="color: var(--ink-soft); font-size: 1.05rem;">
+                            Explica aquí el contexto del proyecto. ¿Qué necesidad existía?
+                            ¿Qué solución se construyó? ¿Qué resultados se obtuvieron?
+                            Esta sección debe contar una historia clara y concisa.
+                        </p>
+                        <p style="color: var(--ink-soft);">
+                            Puedes incluir métricas, aprendizajes o decisiones importantes
+                            de diseño que hayan marcado el desarrollo del proyecto.
+                        </p>
+
+                        <ul class="feature-list mt-4">
+                            <li>Característica clave o beneficio del proyecto.</li>
+                            <li>Otro punto importante que aporta valor.</li>
+                            <li>Resultado medible o impacto generado.</li>
+                            <li>Lección aprendida o decisión técnica relevante.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section id="tecnologias" class="section-pad bg-subtle" aria-labelledby="tech-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">02 — Tecnologías</p>
+                        <h2 id="tech-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Stack <em class="font-display"><em>tecnológico</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- CONFIGURA AQUÍ: tecnologías usadas -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Frontend</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        React, Tailwind CSS, Vite.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-server"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Backend</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        Node.js, Express, PostgreSQL.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-cloud"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Infraestructura</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        AWS, Docker, GitHub Actions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marquee de skills -->
+                <div class="marquee mt-5">
+                    <div class="marquee-track">
+                        <span>React</span><span>Tailwind</span><span>Node.js</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>GitHub Actions</span><span>TypeScript</span>
+                        <span>React</span><span>Tailwind</span><span>Node.js</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>GitHub Actions</span><span>TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTALACIÓN -->
+        <section id="instalacion" class="section-pad" aria-labelledby="install-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">03 — Instalación</p>
+                        <h2 id="install-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Cómo <em class="font-display"><em>empezar</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <!-- CONFIGURA AQUÍ: pasos de instalación -->
+                        <h3 class="h5 mb-3">1. Clonar el repositorio</h3>
+<pre><code>git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+cd nombre-del-proyecto</code></pre>
+
+                        <h3 class="h5 mb-3 mt-4">2. Instalar dependencias</h3>
+<pre><code>npm install
+# o
+yarn install</code></pre>
+
+                        <h3 class="h5 mb-3 mt-4">3. Configurar variables de entorno</h3>
+<pre><code>cp .env.example .env
+# Edita .env con tus credenciales</code></pre>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                        <h3 class="h5 mb-3">4. Ejecutar en modo desarrollo</h3>
+<pre><code>npm run dev
+# o
+yarn dev</code></pre>
+
+                        <h3 class="h5 mb-3 mt-4">5. Compilar para producción</h3>
+<pre><code>npm run build
+npm start</code></pre>
+
+                        <div class="card-editorial p-4 mt-4">
+                            <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                <i class="fas fa-circle-info me-2" style="color: var(--accent);"></i>
+                                Requisitos mínimos: <strong>Node.js 18+</strong> y <strong>npm 9+</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USO -->
+        <section id="uso" class="section-pad bg-subtle" aria-labelledby="uso-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">04 — Uso</p>
+                        <h2 id="uso-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Guía de <em class="font-display"><em>uso</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- CONFIGURA AQUÍ: ejemplos de uso -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <span class="card-num">Ejemplo 1</span>
+                                <h3 class="h5 mt-3 mb-2">Crear un nuevo recurso</h3>
+<pre class="mt-3"><code>const api = new ProjectAPI();
+await api.create({
+  title: 'Mi recurso',
+  category: 'demo'
+});</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <span class="card-num">Ejemplo 2</span>
+                                <h3 class="h5 mt-3 mb-2">Consultar datos</h3>
+<pre class="mt-3"><code>const items = await api.list({
+  limit: 10,
+  sort: 'desc'
+});
+console.log(items);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="section-pad" aria-labelledby="galeria-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">05 — Galería</p>
+                        <h2 id="galeria-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Capturas de <em class="font-display"><em>pantalla</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- CONFIGURA AQUÍ: imágenes del proyecto -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="fade-up">
+                        <img src="https://picsum.photos/seed/gallery1/800/500" alt="Vista principal del proyecto" width="800" height="500" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://picsum.photos/seed/gallery2/800/500" alt="Panel de administración del proyecto" width="800" height="500" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://picsum.photos/seed/gallery3/800/500" alt="Detalle de funcionalidad clave" width="800" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARQUITECTURA -->
+        <section id="arquitectura" class="section-pad bg-subtle" aria-labelledby="arq-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">06 — Arquitectura</p>
+                        <h2 id="arq-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Cómo está <em class="font-display"><em>construido</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <!-- CONFIGURA AQUÍ: descripción de la arquitectura -->
+                        <p style="color: var(--ink-soft);">
+                            Describe la arquitectura general: patrones de diseño, división de capas,
+                            comunicación entre servicios, decisiones de escalabilidad, etc.
+                        </p>
+                        <ul class="feature-list mt-3">
+                            <li>Arquitectura limpia con separación de responsabilidades.</li>
+                            <li>API RESTful documentada con OpenAPI.</li>
+                            <li>Autenticación mediante JWT.</li>
+                            <li>Despliegue automatizado con CI/CD.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-editorial p-4">
+                            <img src="https://picsum.photos/seed/diagram/800/450" alt="Diagrama de arquitectura del sistema" width="800" height="450" loading="lazy" style="border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTRIBUCIÓN Y LICENCIA -->
+        <section id="contribucion" class="section-pad" aria-labelledby="contrib-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">07 — Contribución</p>
+                        <h2 id="contrib-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Cómo <em class="font-display"><em>contribuir</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Proceso de contribución</h3>
+                                <p style="color: var(--ink-soft); font-size: .9rem;">
+                                    <!-- CONFIGURA AQUÍ: guía de contribución -->
+                                    1. Haz fork del repositorio.<br>
+                                    2. Crea una rama con tu feature: <code>git checkout -b feature/nueva-funcionalidad</code>.<br>
+                                    3. Realiza tus cambios y añade tests.<br>
+                                    4. Abre un pull request describiendo los cambios.
+                                </p>
+                                <a href="#" class="link-editorial mt-3">Ver guía completa <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Licencia</h3>
+                                <p style="color: var(--ink-soft); font-size: .9rem;">
+                                    <!-- CONFIGURA AQUÍ: tipo de licencia -->
+                                    Este proyecto está licenciado bajo la <strong>MIT License</strong>.
+                                    Puedes usarlo, modificarlo y distribuirlo libremente.
+                                </p>
+                                <a href="#" class="link-editorial mt-3">Leer licencia <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO / CTA -->
+        <section id="contacto" class="section-pad bg-subtle" aria-labelledby="contacto-titulo">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">08 — Contacto</p>
+                        <h2 id="contacto-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            ¿Preguntas sobre el <em class="font-display"><em>proyecto?</em></em>
+                        </h2>
+                        <p class="mt-4" style="color: var(--ink-soft); max-width: 55ch;">
+                            Si encuentras un bug, tienes una idea de mejora o simplemente quieres
+                            charlar sobre el proyecto, abre un issue en GitHub o escríbeme.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="https://github.com/tu-usuario/nombre-del-proyecto/issues" class="btn-editorial btn-solid" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Abrir issue
+                            </a>
+                            <a href="mailto:tu@email.com" class="btn-editorial">
+                                <i class="fas fa-envelope"></i> Contactar
+                            </a>
+                            <a href="https://tu-usuario.github.io/portafolio/" class="btn-editorial">
+                                <i class="fas fa-arrow-left"></i> Volver al portafolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-big-name" aria-hidden="true">Tu Nombre</div>
+        <div class="footer-bottom">
+            <p class="mb-0">© 2024 Tu Nombre. Todos los derechos reservados.</p>
+            <div class="d-flex gap-3">
+                <a href="https://github.com/tu-usuario" target="_blank" rel="noopener" class="link-editorial" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener" class="link-editorial" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/tu_usuario" target="_blank" rel="noopener" class="link-editorial" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p class="mb-0">Documentación del proyecto</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
