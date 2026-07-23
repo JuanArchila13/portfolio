@@ -527,8 +527,6 @@ pre code {
     animation: marquee 32s linear infinite;
 }
 
-.marquee:hover .marquee-track { animation-play-state: paused; }
-
 .marquee-track span {
     font-family: 'Fraunces', serif;
     font-style: italic;
