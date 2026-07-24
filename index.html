@@ -824,7 +824,7 @@
 
         /* ---- Section spacing rhythm ---- */
         .section-pad {
-            padding: clamp(4.5rem, 10vw, 8.5rem) 0;
+            padding: clamp(4.5rem, 10vw, 8.5rem) clamp(2rem, 5vw, 5rem);
         }
 
         /* ---- AOS override to match easing ---- */
@@ -936,7 +936,8 @@
 
     <main>
         <!-- ============ HERO ============ -->
-        <section id="inicio" class="min-vh-100 d-flex align-items-center position-relative" aria-label="Presentación">
+        <section id="inicio" class="min-vh-100 d-flex align-items-center position-relative" aria-label="Presentación"
+            style="padding-left: clamp(2rem, 5vw, 5rem); padding-right: clamp(2rem, 5vw, 5rem);">
             <div class="container pt-5 mt-4">
                 <div class="row align-items-center g-5">
                     <!-- Texto del hero -->
@@ -1018,7 +1019,7 @@
         </div>
 
         <!-- ============ SOBRE MÍ ============ -->
-        <section class="section-pad" style="padding: clamp(3rem, 6vw, 5rem) 0;" aria-labelledby="sobre-mi-titulo">
+        <section class="section-pad" style="padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 5vw, 5rem);" aria-labelledby="sobre-mi-titulo">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-3" data-aos="fade-up">
