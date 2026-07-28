@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acueducto El Tunjo — Sistema de Gestión y Facturación | Juan Pablo Archila</title>
+    <meta name="description" content="Sistema de gestión y facturación para el Acueducto El Tunjo, desarrollado en Java y MySQL para optimizar la administración de suscriptores y procesos operativos.">
+    <meta name="author" content="Juan Pablo Archila">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo.html">
+    <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Acueducto El Tunjo — Sistema de Gestión y Facturación">
+    <meta property="og:description" content="Sistema de gestión y facturación para optimizar la administración de suscriptores y procesos operativos del Acueducto El Tunjo.">
+    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo.html">
+    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/acueducto-principal.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Acueducto El Tunjo — Sistema de Gestión y Facturación">
+    <meta name="twitter:description" content="Sistema de gestión y facturación para optimizar la administración de suscriptores y procesos operativos del Acueducto El Tunjo.">
+    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/acueducto-principal.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23161513'/><text x='50' y='68' font-size='52' font-family='Georgia' fill='%23FAF9F6' text-anchor='middle'>J</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../template/css/styles.css">
+</head>
+
+<body class="grain">
+
+    <header>
+        <nav class="navbar-editorial" aria-label="Navegación del proyecto">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    Juan<em>Archila</em><span style="color:var(--accent)">.</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" aria-controls="projectMenu" aria-expanded="false" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="navbar-menu" id="projectMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#contribuciones">Contribuciones</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+                        <span class="knob"><i class="fas fa-sun"></i></span>
+                    </button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-project" aria-label="Presentación del proyecto">
+            <div class="container">
+                <p class="eyebrow fade-item f-1">Sistema de Gestión</p>
+
+                <h1 class="hero-title">
+                    <span class="reveal-mask d-1"><span>Acueducto</span></span>
+                    <span class="reveal-mask d-2"><span class="font-display"><em>El Tunjo</em></span></span>
+                </h1>
+
+                <p class="hero-subtitle fade-item f-2">
+                    Sistema de gestión y facturación orientado a optimizar la administración de suscriptores, automatizar la facturación y mejorar la eficiencia operativa en la prestación del servicio de agua.
+                </p>
+
+                <div class="hero-meta fade-item f-2">
+                    <div>
+                        <strong>Rol</strong>
+                        <span>Desarrollador Backend</span>
+                    </div>
+                    <div>
+                        <strong>Estado</strong>
+                        <span>Completado</span>
+                    </div>
+                    <div>
+                        <strong>Periodo</strong>
+                        <span>2023</span>
+                    </div>
+                    <div>
+                        <strong>Cliente</strong>
+                        <span>Acueducto El Tunjo</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions fade-item f-3">
+                    <a href="#descripcion" class="btn-editorial btn-solid">
+                        Conocer más <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="../index.html" class="btn-editorial">
+                        <i class="fas fa-arrow-left"></i> Volver al portafolio
+                    </a>
+                </div>
+            </div>
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4 d-none d-md-block fade-item f-3" aria-hidden="true">
+                <div class="scroll-cue"></div>
+            </div>
+        </section>
+
+        <section id="descripcion" class="section-pad" aria-labelledby="desc-titulo">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <p class="eyebrow">01 — Descripción</p>
+                        <h2 id="desc-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Gestión y facturación del <em class="font-display"><em>servicio de agua</em></em>
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="150">
+                        <p style="color: var(--ink-soft); font-size: 1.05rem;">
+                            Participé en el desarrollo de un sistema de gestión y facturación para el Acueducto El Tunjo, orientado a optimizar la administración de la información de los usuarios suscriptores, automatizar los procesos de facturación y mejorar la eficiencia operativa en la gestión del servicio de agua.
+                        </p>
+                        <p style="color: var(--ink-soft);">
+                            El proyecto permitió transformar procesos manuales en flujos automatizados, reduciendo tiempos de generación de recibos y reportes, y facilitando el control de la cartera pendiente del acueducto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contribuciones" class="section-pad bg-subtle" aria-labelledby="contrib-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">02 — Contribuciones</p>
+                        <h2 id="contrib-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Mis aportes al <em class="font-display"><em>proyecto</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-clipboard-list"></i></div>
+                                <h3 class="h5 mb-2">Análisis de requisitos</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Analicé y documenté requisitos funcionales y no funcionales, asegurando que la solución respondiera a las necesidades operativas del acueducto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-sitemap"></i></div>
+                                <h3 class="h5 mb-2">Arquitectura y datos</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Diseñé la arquitectura del sistema y modelé la estructura de datos para garantizar una solución robusta, escalable y de fácil mantenimiento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-code"></i></div>
+                                <h3 class="h5 mb-2">Desarrollo en Java</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Contribuí al desarrollo de la aplicación en Java, implementando funcionalidades para administración de usuarios, generación de facturación y gestión de suscriptores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-file-invoice-dollar"></i></div>
+                                <h3 class="h5 mb-2">Optimización de recibos</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Optimicé el proceso de generación de recibos de cobro, logrando una reducción del <strong>90%</strong> en los tiempos de creación de los mismos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-chart-pie"></i></div>
+                                <h3 class="h5 mb-2">Automatización de reportes</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Automatizé la consulta y consolidación de información de usuarios con cartera pendiente, consiguiendo una mejora del <strong>80%</strong> en los tiempos de búsqueda y generación de reportes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="arquitectura" class="section-pad" aria-labelledby="arq-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">03 — Arquitectura</p>
+                        <h2 id="arq-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Diseño robusto y <em class="font-display"><em>escalable</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <p style="color: var(--ink-soft);">
+                            El sistema fue diseñado para soportar la operación diaria del acueducto con una arquitectura clara y un modelo de datos bien estructurado:
+                        </p>
+                        <ul class="feature-list mt-3">
+                            <li><strong>Arquitectura modular</strong> que facilita el mantenimiento y la evolución del sistema.</li>
+                            <li><strong>Modelo de datos relacional</strong> diseñado para garantizar integridad referencial y consistencia de la información de suscriptores.</li>
+                            <li><strong>Aplicación en Java</strong> con funcionalidades centradas en usuarios, facturación y reportes.</li>
+                            <li><strong>Automatización de procesos clave</strong> como generación de recibos y consulta de cartera pendiente.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-editorial p-4">
+                            <img src="https://picsum.photos/seed/acueducto/800/500" alt="Vista del sistema de gestión del Acueducto El Tunjo" width="800" height="500" loading="lazy" style="border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section-pad bg-subtle" aria-labelledby="tech-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">04 — Tecnologías</p>
+                        <h2 id="tech-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Stack <em class="font-display"><em>tecnológico</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-5" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fab fa-java"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Lenguaje</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        Java
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-database"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Base de datos</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        MySQL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee mt-5">
+                    <div class="marquee-track">
+                        <span>Java</span><span>MySQL</span><span>Gestión de suscriptores</span><span>Facturación</span><span>Reportes</span>
+                        <span>Java</span><span>MySQL</span><span>Gestión de suscriptores</span><span>Facturación</span><span>Reportes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-pad" aria-labelledby="galeria-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">05 — Galería</p>
+                        <h2 id="galeria-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Vista del <em class="font-display"><em>sistema</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="fade-up">
+                        <img src="https://picsum.photos/seed/acueducto1/800/500" alt="Vista del sistema de gestión del Acueducto El Tunjo" width="800" height="500" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://picsum.photos/seed/acueducto2/800/500" alt="Panel de facturación y gestión de suscriptores" width="800" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-pad bg-subtle" aria-labelledby="contacto-titulo">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">06 — Contacto</p>
+                        <h2 id="contacto-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            ¿Preguntas sobre el proyecto <em class="font-display"><em>Acueducto El Tunjo?</em></em>
+                        </h2>
+                        <p class="mt-4" style="color: var(--ink-soft); max-width: 55ch;">
+                            Si quieres conocer más sobre la optimización de procesos, el modelado de datos o la arquitectura del sistema, escríbeme.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="mailto:jpabloarchila@gmail.com" class="btn-editorial btn-solid">
+                                <i class="fas fa-envelope"></i> Contactar
+                            </a>
+                            <a href="../index.html" class="btn-editorial">
+                                <i class="fas fa-arrow-left"></i> Volver al portafolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-big-name" aria-hidden="true">Juan Archila</div>
+        <div class="footer-bottom">
+            <p class="mb-0">© 2026 Juan Pablo Archila. Todos los derechos reservados.</p>
+            <div class="d-flex gap-3">
+                <a href="https://github.com/JuanArchila13" target="_blank" rel="noopener" class="link-editorial" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/juan-pablo-archila-amaya" target="_blank" rel="noopener" class="link-editorial" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mb-0">Detalle del proyecto Acueducto El Tunjo</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../template/js/main.js"></script>
+</body>
+</html>
