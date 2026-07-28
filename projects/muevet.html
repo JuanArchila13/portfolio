@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MueveT — Plataforma Inteligente de Transporte Público | Juan Pablo Archila</title>
+    <meta name="description" content="MueveT es una plataforma inteligente para la gestión del Transporte Público Colectivo Urbano de Tunja, con IoT, monitoreo en tiempo real y arquitectura escalable.">
+    <meta name="author" content="Juan Pablo Archila">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/muevet.html">
+    <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MueveT — Plataforma Inteligente de Transporte Público">
+    <meta property="og:description" content="Plataforma de gestión del transporte público de Tunja con IoT, monitoreo en tiempo real y arquitectura escalable.">
+    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/muevet.html">
+    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/muevet-principal.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MueveT — Plataforma Inteligente de Transporte Público">
+    <meta name="twitter:description" content="Plataforma de gestión del transporte público de Tunja con IoT, monitoreo en tiempo real y arquitectura escalable.">
+    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/muevet-principal.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23161513'/><text x='50' y='68' font-size='52' font-family='Georgia' fill='%23FAF9F6' text-anchor='middle'>J</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../template/css/styles.css">
+</head>
+
+<body class="grain">
+
+    <header>
+        <nav class="navbar-editorial" aria-label="Navegación del proyecto">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    Juan<em>Archila</em><span style="color:var(--accent)">.</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" aria-controls="projectMenu" aria-expanded="false" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="navbar-menu" id="projectMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+                        <span class="knob"><i class="fas fa-sun"></i></span>
+                    </button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-project" aria-label="Presentación del proyecto">
+            <div class="container">
+                <p class="eyebrow fade-item f-1">Proyecto de Investigación · Minciencias</p>
+
+                <h1 class="hero-title">
+                    <span class="reveal-mask d-1"><span>Plataforma</span></span>
+                    <span class="reveal-mask d-2"><span class="font-display"><em>MueveT</em></span></span>
+                </h1>
+
+                <p class="hero-subtitle fade-item f-2">
+                    Sistema de información para la gestión inteligente del Transporte Público Colectivo Urbano de Tunja, integrando IoT, análisis de datos y monitoreo en tiempo real.
+                </p>
+
+                <div class="hero-meta fade-item f-2">
+                    <div>
+                        <strong>Rol</strong>
+                        <span>Desarrollador Full-Stack</span>
+                    </div>
+                    <div>
+                        <strong>Estado</strong>
+                        <span>Terminado</span>
+                    </div>
+                    <div>
+                        <strong>Periodo</strong>
+                        <span>2025 — 2026</span>
+                    </div>
+                    <div>
+                        <strong>Financiación</strong>
+                        <span>Minciencias</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions fade-item f-3">
+                    <a href="#descripcion" class="btn-editorial btn-solid">
+                        Conocer más <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="../index.html" class="btn-editorial">
+                        <i class="fas fa-arrow-left"></i> Volver al portafolio
+                    </a>
+                </div>
+            </div>
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4 d-none d-md-block fade-item f-3" aria-hidden="true">
+                <div class="scroll-cue"></div>
+            </div>
+        </section>
+
+        <section id="descripcion" class="section-pad" aria-labelledby="desc-titulo">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <p class="eyebrow">01 — Descripción</p>
+                        <h2 id="desc-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Gestión del transporte con <em class="font-display"><em>innovación</em></em>
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="150">
+                        <p style="color: var(--ink-soft); font-size: 1.05rem;">
+                            MueveT es un sistema de información desarrollado en el marco de un proyecto de investigación financiado por el Ministerio de Ciencia, Tecnología e Innovación de Colombia (Minciencias), orientado a fortalecer la gestión del Transporte Público Colectivo Urbano mediante la integración de tecnologías IoT, análisis de datos y monitoreo en tiempo real.
+                        </p>
+                        <p style="color: var(--ink-soft);">
+                            La plataforma se destaca por una arquitectura escalable, tanto en funcionalidades como en despliegue, implementando un sistema de persistencia de datos híbrido que permite almacenar datos de forma estructurada y no estructurada de manera eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionalidades" class="section-pad bg-subtle" aria-labelledby="func-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">02 — Funcionalidades</p>
+                        <h2 id="func-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Funcionalidades <em class="font-display"><em>principales</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-building"></i></div>
+                                <h3 class="h5 mb-2">Gestión operativa</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Administración de empresas operadoras, vehículos, conductores y propietarios bajo una filosofía Multi-Tenant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-route"></i></div>
+                                <h3 class="h5 mb-2">Rutas y paraderos</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Gestión de rutas, segmentos, paraderos y calendarios operativos del sistema de transporte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-satellite-dish"></i></div>
+                                <h3 class="h5 mb-2">Monitoreo en tiempo real</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Seguimiento de vehículos mediante dispositivos IoT y cálculo de tiempos estimados de llegada (ETA) a paraderos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-heart-pulse"></i></div>
+                                <h3 class="h5 mb-2">NOC IoT</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Centro de Operaciones de Red para supervisar el estado y la salud de los dispositivos IoT desplegados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-bell"></i></div>
+                                <h3 class="h5 mb-2">Alertas e infracciones</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Gestión de alertas e infracciones operativas para el control del servicio de transporte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-chart-line"></i></div>
+                                <h3 class="h5 mb-2">Indicadores y reportes</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Visualización de indicadores de calidad del servicio y generación de reportes para la toma de decisiones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-cloud-sun"></i></div>
+                                <h3 class="h5 mb-2">Paraderos inteligentes</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Visualización de variables ambientales: temperatura, humedad, ruido, calidad del aire e intensidad solar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body">
+                                <div class="icon-tile mb-3"><i class="fas fa-file-lines"></i></div>
+                                <h3 class="h5 mb-2">Reportes</h3>
+                                <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                    Generación de reportes para empresas operadoras y autoridades de movilidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="arquitectura" class="section-pad" aria-labelledby="arq-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">03 — Arquitectura</p>
+                        <h2 id="arq-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Arquitectura <em class="font-display"><em>escalable</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <p style="color: var(--ink-soft);">
+                            MueveT implementa estilos arquitectónicos orientados a la escalabilidad, la mantenibilidad y el procesamiento eficiente de eventos en tiempo real:
+                        </p>
+                        <ul class="feature-list mt-3">
+                            <li><strong>Event-Driven Architecture (EDA)</strong> para el manejo de eventos en tiempo real provenientes de dispositivos IoT.</li>
+                            <li><strong>API-First</strong> en el backend, facilitando la integración con múltiples clientes y servicios.</li>
+                            <li><strong>Feature-Based Architecture</strong> en el frontend para una organización modular del código.</li>
+                            <li><strong>MQTT</strong> como protocolo de comunicación ligero para dispositivos IoT.</li>
+                            <li><strong>Persistencia híbrida</strong> con MySQL para datos estructurados y MongoDB para datos no estructurados.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-editorial p-4">
+                            <img src="../assets/projects/muevet-principal.jpg" alt="Vista principal de la plataforma MueveT" width="800" height="500" loading="lazy" style="border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section-pad bg-subtle" aria-labelledby="tech-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">04 — Tecnologías</p>
+                        <h2 id="tech-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Stack <em class="font-display"><em>tecnológico</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-code"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Backend</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        PHP (Laravel)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Frontend</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        React (Vite), JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-database"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Bases de datos</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        MySQL, MongoDB
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fas fa-satellite-dish"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">IoT</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        MQTT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-editorial h-100">
+                            <div class="card-body d-flex gap-3">
+                                <div class="icon-tile"><i class="fab fa-docker"></i></div>
+                                <div>
+                                    <h3 class="h5 mb-2">Despliegue</h3>
+                                    <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
+                                        Docker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee mt-5">
+                    <div class="marquee-track">
+                        <span>Laravel</span><span>React</span><span>Vite</span><span>JavaScript</span><span>MySQL</span><span>MongoDB</span><span>MQTT</span><span>Docker</span>
+                        <span>Laravel</span><span>React</span><span>Vite</span><span>JavaScript</span><span>MySQL</span><span>MongoDB</span><span>MQTT</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-pad" aria-labelledby="galeria-titulo">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <p class="eyebrow">05 — Galería</p>
+                        <h2 id="galeria-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+                            Vista de la <em class="font-display"><em>plataforma</em></em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="fade-up">
+                        <img src="../assets/projects/muevet-principal.jpg" alt="Vista principal de MueveT" width="800" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-big-name" aria-hidden="true">Juan Archila</div>
+        <div class="footer-bottom">
+            <p class="mb-0">© 2026 Juan Pablo Archila. Todos los derechos reservados.</p>
+            <div class="d-flex gap-3">
+                <a href="https://github.com/JuanArchila13" target="_blank" rel="noopener" class="link-editorial" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/juan-pablo-archila-amaya" target="_blank" rel="noopener" class="link-editorial" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mb-0">Detalle del proyecto MueveT</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../template/js/main.js"></script>
+</body>
+</html>
