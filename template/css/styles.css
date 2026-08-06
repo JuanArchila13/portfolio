@@ -229,6 +229,41 @@ html.dark .theme-toggle .knob { transform: translateX(20px); }
 
 .theme-toggle .knob i { font-size: 9px; color: var(--bg); }
 
+/* ---------- LANGUAGE SWITCHER ---------- */
+.nav-lang-item {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+    margin-left: .5rem;
+}
+
+.lang-link {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color .3s ease;
+    padding: 0;
+}
+
+.lang-link:hover {
+    color: var(--accent);
+}
+
+.lang-link::after { display: none; }
+
+.lang-current {
+    color: var(--ink);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+}
+
+.lang-separator {
+    color: var(--ink-muted);
+}
+
 /* ---------- HERO ---------- */
 .hero-project {
     min-height: 100vh;
@@ -718,6 +753,12 @@ footer {
     .navbar-menu.open { display: flex; }
 
     .navbar-menu a { display: block; width: 100%; padding: .75rem 0; }
+
+    .nav-lang-item {
+        margin-left: 0;
+        margin-top: .75rem;
+        padding: .75rem 0;
+    }
 
     .theme-toggle { margin-left: 0; margin-top: .75rem; }
 
