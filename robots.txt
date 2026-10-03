@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tu-usuario.github.io/portafolio/sitemap.xml
+Sitemap: https://juanarchila13.github.io/portafolio/sitemap.xml
