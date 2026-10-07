@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Curador de Arte Urbano — Análisis técnico-artístico con IA | Juan Pablo Archila</title>
-    <meta name="description" content="Curador de Arte Urbano es una plataforma de análisis técnico-artístico basada en IA, RAG, visión por computador y modelos de lenguaje multimodales.">
+    <title>Curador de Arte Urbano — Technical-Artistic Analysis with AI | Juan Pablo Archila</title>
+    <meta name="description" content="Curador de Arte Urbano is a technical-artistic analysis platform based on AI, RAG, computer vision, and multimodal language models.">
     <meta name="author" content="Juan Pablo Archila">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano.html">
+    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano/en/">
     <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Curador de Arte Urbano — Análisis técnico-artístico con IA">
-    <meta property="og:description" content="Plataforma de análisis de arte urbano basada en IA, RAG, visión por computador y modelos de lenguaje multimodales.">
-    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano.html">
-    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/curador-principal.jpg">
+    <meta property="og:title" content="Curador de Arte Urbano — Technical-Artistic Analysis with AI">
+    <meta property="og:description" content="Urban art analysis platform based on AI, RAG, computer vision, and multimodal language models.">
+    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano/en/">
+    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano/images/curador-presentacion.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Curador de Arte Urbano — Análisis técnico-artístico con IA">
-    <meta name="twitter:description" content="Plataforma de análisis de arte urbano basada en IA, RAG, visión por computador y modelos de lenguaje multimodales.">
-    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/curador-principal.jpg">
+    <meta name="twitter:title" content="Curador de Arte Urbano — Technical-Artistic Analysis with AI">
+    <meta name="twitter:description" content="Urban art analysis platform based on AI, RAG, computer vision, and multimodal language models.">
+    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/projects/curador-arte-urbano/images/curador-presentacion.png">
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23161513'/><text x='50' y='68' font-size='52' font-family='Georgia' fill='%23FAF9F6' text-anchor='middle'>J</text></svg>">
 
@@ -32,36 +32,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../template/css/styles.css">
+    <link rel="stylesheet" href="../../../template/css/styles.css">
 </head>
 
 <body class="grain">
 
     <header>
-        <nav class="navbar-editorial" aria-label="Navegación del proyecto">
+        <nav class="navbar-editorial" aria-label="Project navigation">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="../../../en/index.html">
                     Juan<em>Archila</em><span style="color:var(--accent)">.</span>
                 </a>
 
-                <button class="navbar-toggler" type="button" aria-controls="projectMenu" aria-expanded="false" aria-label="Abrir menú">
+                <button class="navbar-toggler" type="button" aria-controls="projectMenu" aria-expanded="false" aria-label="Open menu">
                     <i class="fas fa-bars"></i>
                 </button>
 
                 <ul class="navbar-menu" id="projectMenu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#descripcion">Descripción</a></li>
-                    <li><a href="#pipeline">Pipeline RAG</a></li>
-                    <li><a href="#arquitectura">Arquitectura</a></li>
-                    <li><a href="#tecnologias">Tecnologías</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#descripcion">Description</a></li>
+                    <li><a href="#pipeline">RAG Pipeline</a></li>
+                    <li><a href="#arquitectura">Architecture</a></li>
+                    <li><a href="#tecnologias">Technologies</a></li>
+                    <li><a href="#galeria">Gallery</a></li>
                     <li class="nav-lang-item">
-                        <span class="lang-current" aria-current="true">ES</span>
+                        <a href="../" class="lang-link" aria-label="Switch to Spanish">ES</a>
                         <span class="lang-separator">/</span>
-                        <a href="en/curador-arte-urbano.html" class="lang-link" aria-label="Cambiar a inglés">EN</a>
+                        <span class="lang-current" aria-current="true">EN</span>
                     </li>
-                    <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+                    <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
                         <span class="knob"><i class="fas fa-sun"></i></span>
                     </button></li>
                 </ul>
@@ -70,9 +69,9 @@
     </header>
 
     <main>
-        <section id="inicio" class="hero-project" aria-label="Presentación del proyecto">
+        <section id="inicio" class="hero-project" aria-label="Project presentation">
             <div class="container">
-                <p class="eyebrow fade-item f-1">Proyecto de Investigación</p>
+                <p class="eyebrow fade-item f-1">Research Project</p>
 
                 <h1 class="hero-title">
                     <span class="reveal-mask d-1"><span>Curador de</span></span>
@@ -80,30 +79,30 @@
                 </h1>
 
                 <p class="hero-subtitle fade-item f-2">
-                    Plataforma de análisis técnico-artístico basada en IA generativa, visión por computador, RAG y modelos de lenguaje multimodales para la generación automatizada de reportes sobre obras de arte urbano.
+                    Technical-artistic analysis platform based on generative AI, computer vision, RAG, and multimodal language models for the automated generation of reports on urban art works.
                 </p>
 
                 <div class="hero-meta fade-item f-2">
                     <div>
-                        <strong>Rol</strong>
-                        <span>Desarrollador de IA</span>
+                        <strong>Role</strong>
+                        <span>AI Developer</span>
                     </div>
                     <div>
-                        <strong>Periodo</strong>
+                        <strong>Period</strong>
                         <span>2026</span>
                     </div>
                     <div>
-                        <strong>Área</strong>
-                        <span>IA Generativa</span>
+                        <strong>Area</strong>
+                        <span>Generative AI</span>
                     </div>
                 </div>
 
                 <div class="hero-actions fade-item f-3">
                     <a href="#descripcion" class="btn-editorial btn-solid">
-                        Conocer más <i class="fas fa-arrow-down"></i>
+                        Learn more <i class="fas fa-arrow-down"></i>
                     </a>
-                    <a href="../index.html" class="btn-editorial">
-                        <i class="fas fa-arrow-left"></i> Volver al portafolio
+                    <a href="../../../en/index.html" class="btn-editorial">
+                        <i class="fas fa-arrow-left"></i> Back to portfolio
                     </a>
                 </div>
             </div>
@@ -117,23 +116,23 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-5" data-aos="fade-up">
-                        <p class="eyebrow">01 — Descripción</p>
+                        <p class="eyebrow">01 — Description</p>
                         <h2 id="desc-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            Análisis de arte urbano con <em class="font-display"><em>inteligencia artificial</em></em>
+                            Urban art analysis with <em class="font-display"><em>artificial intelligence</em></em>
                         </h2>
                     </div>
                     <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="150">
                         <p style="color: var(--ink-soft); font-size: 1.05rem;">
-                            Curador de Arte Urbano es una plataforma diseñada para analizar obras de arte urbano mediante técnicas de inteligencia artificial generativa. Integra visión por computador, modelos de lenguaje de gran escala (LLMs), recuperación aumentada de generación (RAG) y procesamiento multimodal para producir reportes técnico-artísticos de forma automatizada.
+                            I developed Curador de Arte Urbano to explore how artificial intelligence can help us understand an artwork beyond its first impression. The platform analyzes images of urban art and generates reports covering their colors, composition, techniques, and context.
                         </p>
                         <p style="color: var(--ink-soft);">
-                            Diseñé e implementé una solución de análisis técnico-artístico basada en IA generativa ejecutada de forma local, combinando un pipeline de análisis de imágenes desarrollado en Python y OpenCV con un motor de inferencia local basado en llama.cpp y Ollama. El modelo principal utilizado es Qwen3.5 4B cuantizado (Q4), seleccionado para optimizar el consumo de memoria, reducir los tiempos de inferencia y mantener un alto rendimiento en equipos con recursos limitados, sin depender de servicios de IA en la nube.
+                            I combined Python and OpenCV for image processing with language models running locally through llama.cpp and Ollama. I chose Qwen3.5 4B with Q4 quantization to balance analysis quality and resource usage, without relying on cloud AI services.
                         </p>
                         <p style="color: var(--ink-soft);">
-                            Realicé pruebas comparativas con modelos como Gemma4, Qwen3.6 y LLaVA para identificar la opción con mejor equilibrio entre rendimiento y calidad de respuestas. Además, diseñé una estrategia de Prompt Engineering basada en prompts estructurados y contextualizados, enriquecidos con información extraída durante el procesamiento de la imagen: paleta cromática, distribución de colores, técnicas pictóricas, composición, tipografía, estado de conservación y elementos semánticos. Este enfoque permitió reducir la variabilidad de las respuestas del modelo y obtener análisis más precisos, consistentes y alineados con criterios técnico-artísticos.
+                            During development, I compared different models and refined their prompts to guide the analysis. I incorporated details extracted from each image, such as its color palette, typography, and condition, to produce more consistent responses focused on the artwork's characteristics.
                         </p>
                         <p style="color: var(--ink-soft);">
-                            El sistema permite caracterizar la composición visual de las obras, extraer paletas de color, identificar elementos técnicos y generar análisis contextuales enriquecidos con conocimiento especializado almacenado en una base vectorial.
+                            I used <strong>LangChain</strong> to connect the language models with the RAG system and build <strong>agents with information retrieval tools</strong>. These tools can look up information about the characteristics being analyzed, such as color, composition, and typography, and retrieve references from specialist documents. The reports combine visual analysis with information that helps place the artwork in context.
                         </p>
                     </div>
                 </div>
@@ -144,9 +143,9 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8" data-aos="fade-up">
-                        <p class="eyebrow">02 — Pipeline RAG</p>
+                        <p class="eyebrow">02 — RAG Pipeline</p>
                         <h2 id="pipeline-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            Recuperación aumentada de <em class="font-display"><em>generación</em></em>
+                            Retrieval-Augmented <em class="font-display"><em>Generation</em></em>
                         </h2>
                     </div>
                 </div>
@@ -156,9 +155,9 @@
                         <div class="card-editorial h-100">
                             <div class="card-body">
                                 <div class="icon-tile mb-3"><i class="fas fa-file-pdf"></i></div>
-                                <h3 class="h5 mb-2">Preprocesamiento</h3>
+                                <h3 class="h5 mb-2">Preprocessing</h3>
                                 <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
-                                    Normalización del contenido de PDFs eliminando caracteres especiales, ruido tipográfico y elementos no relevantes antes de la indexación.
+                                    Normalization of PDF content by removing special characters, typographic noise, and irrelevant elements before indexing.
                                 </p>
                             </div>
                         </div>
@@ -168,9 +167,9 @@
                         <div class="card-editorial h-100">
                             <div class="card-body">
                                 <div class="icon-tile mb-3"><i class="fas fa-scissors"></i></div>
-                                <h3 class="h5 mb-2">Segmentación</h3>
+                                <h3 class="h5 mb-2">Segmentation</h3>
                                 <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
-                                    División del documento en chunks con solapamiento, preservando el contexto entre fragmentos para maximizar la recuperación de información.
+                                    Document splitting into overlapping chunks, preserving context between fragments to maximize information retrieval.
                                 </p>
                             </div>
                         </div>
@@ -180,9 +179,9 @@
                         <div class="card-editorial h-100">
                             <div class="card-body">
                                 <div class="icon-tile mb-3"><i class="fas fa-filter"></i></div>
-                                <h3 class="h5 mb-2">Selección híbrida</h3>
+                                <h3 class="h5 mb-2">Hybrid selection</h3>
                                 <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
-                                    Evaluación combinada de similitud estructural (40%) y similitud semántica mediante embeddings (60%), con umbral mínimo del 70%.
+                                    Combined evaluation of structural similarity (40%) and semantic similarity through embeddings (60%), with a minimum threshold of 70%.
                                 </p>
                             </div>
                         </div>
@@ -192,9 +191,9 @@
                         <div class="card-editorial h-100">
                             <div class="card-body">
                                 <div class="icon-tile mb-3"><i class="fas fa-database"></i></div>
-                                <h3 class="h5 mb-2">Indexación</h3>
+                                <h3 class="h5 mb-2">Indexing</h3>
                                 <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
-                                    Almacenamiento de los chunks seleccionados en ChromaDB para construir una base vectorial especializada y actualizable.
+                                    Storage of selected chunks in ChromaDB to build a specialized and updatable vector database.
                                 </p>
                             </div>
                         </div>
@@ -204,9 +203,9 @@
                 <div class="row mt-5">
                     <div class="col-lg-8" data-aos="fade-up">
                         <div class="card-editorial p-4">
-                            <h3 class="h5 mb-3">Inferencia</h3>
+                            <h3 class="h5 mb-3">Agents and information retrieval tools</h3>
                             <p class="mb-0" style="color: var(--ink-soft);">
-                                Durante la inferencia, el sistema ejecuta búsquedas Top-K sobre la base vectorial para recuperar evidencia contextual que complementa las consultas del modelo de lenguaje. Esto mejora la precisión de las respuestas, aumenta su trazabilidad y permite actualizar el conocimiento sin necesidad de reentrenar el modelo base.
+                                With <strong>LangChain</strong>, I connected the agents to <strong>tools</strong> that retrieve information related to each artwork's characteristics. Top-K retrieval in ChromaDB supplies excerpts from specialist documents to complement the model's analysis. This workflow adds context to the responses and allows references to be updated without retraining the base model.
                             </p>
                         </div>
                     </div>
@@ -218,9 +217,9 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8" data-aos="fade-up">
-                        <p class="eyebrow">03 — Arquitectura</p>
+                        <p class="eyebrow">03 — Architecture</p>
                         <h2 id="arq-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            Componentes del <em class="font-display"><em>sistema</em></em>
+                            System <em class="font-display"><em>components</em></em>
                         </h2>
                     </div>
                 </div>
@@ -228,18 +227,20 @@
                 <div class="row g-5">
                     <div class="col-lg-6" data-aos="fade-up">
                         <p style="color: var(--ink-soft);">
-                            La plataforma combina múltiples componentes de inteligencia artificial para el análisis técnico-artístico de obras de arte urbano:
+                            The platform combines multiple artificial intelligence components for the technical-artistic analysis of urban art works:
                         </p>
                         <ul class="feature-list mt-3">
-                            <li><strong>Motor de análisis cromático</strong> con Python y OpenCV, utilizando K-Means y espacios de color CIELAB, HSV y RGB para extraer paletas de color.</li>
-                            <li><strong>Pipeline RAG</strong> con ChromaDB, embeddings especializados y recuperación Top-K para enriquecer las respuestas del modelo.</li>
-                            <li><strong>Ejecución local de LLMs</strong> mediante Ollama y llama.cpp, evaluando modelos multimodales según sus capacidades.</li>
-                            <li><strong>Prompt Engineering</strong> para mejorar la consistencia, calidad y especificidad de los análisis generados.</li>
+                            <li><strong>Chromatic analysis engine</strong> with Python and OpenCV, using K-Means and CIELAB, HSV, and RGB color spaces to extract color palettes.</li>
+                            <li><strong>RAG pipeline</strong> with ChromaDB, specialized embeddings, and Top-K retrieval to enrich the model's responses.</li>
+                            <li><strong>LangChain orchestration</strong> to connect language models, document retrieval, and information lookup tools.</li>
+                            <li><strong>Agents with tools</strong> to retrieve information about color, composition, typography, and other characteristics analyzed in the artworks.</li>
+                            <li><strong>Local LLM execution</strong> through Ollama and llama.cpp, evaluating multimodal models according to their capabilities.</li>
+                            <li><strong>Prompt Engineering</strong> to improve the consistency, quality, and specificity of generated analyses.</li>
                         </ul>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
                         <div class="card-editorial p-4">
-                            <img src="https://picsum.photos/seed/curador/800/500" alt="Representación del análisis de arte urbano con IA" width="800" height="500" loading="lazy" style="border-radius: 4px;">
+                            <img src="https://picsum.photos/seed/curador/800/500" alt="Representation of urban art analysis with AI" width="800" height="500" loading="lazy" style="border-radius: 4px;">
                         </div>
                     </div>
                 </div>
@@ -250,9 +251,9 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8" data-aos="fade-up">
-                        <p class="eyebrow">04 — Tecnologías</p>
+                        <p class="eyebrow">04 — Technologies</p>
                         <h2 id="tech-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            Stack <em class="font-display"><em>tecnológico</em></em>
+                            Tech <em class="font-display"><em>stack</em></em>
                         </h2>
                     </div>
                 </div>
@@ -263,7 +264,7 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fab fa-python"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">Lenguaje</h3>
+                                    <h3 class="h5 mb-2">Language</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
                                         Python
                                     </p>
@@ -277,7 +278,7 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fas fa-eye"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">Visión por computador</h3>
+                                    <h3 class="h5 mb-2">Computer vision</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
                                         OpenCV, K-Means, CIELAB, HSV, RGB
                                     </p>
@@ -291,7 +292,7 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fas fa-brain"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">LLMs locales</h3>
+                                    <h3 class="h5 mb-2">Local LLMs</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
                                         Ollama, llama.cpp
                                     </p>
@@ -305,7 +306,7 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fas fa-database"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">Base vectorial</h3>
+                                    <h3 class="h5 mb-2">Vector database</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
                                         ChromaDB
                                     </p>
@@ -319,7 +320,7 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fas fa-magnifying-glass-chart"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">Recuperación</h3>
+                                    <h3 class="h5 mb-2">Retrieval</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
                                         RAG, Embeddings, Top-K
                                     </p>
@@ -333,9 +334,9 @@
                             <div class="card-body d-flex gap-3">
                                 <div class="icon-tile"><i class="fas fa-comments"></i></div>
                                 <div>
-                                    <h3 class="h5 mb-2">Prompt Engineering</h3>
+                                    <h3 class="h5 mb-2">LangChain and agents</h3>
                                     <p class="mb-0" style="font-size: .9rem; color: var(--ink-soft);">
-                                        Diseño y optimización de prompts
+                                        Information retrieval tools, model orchestration, and prompt design
                                     </p>
                                 </div>
                             </div>
@@ -345,8 +346,8 @@
 
                 <div class="marquee mt-5">
                     <div class="marquee-track">
-                        <span>Python</span><span>OpenCV</span><span>Ollama</span><span>llama.cpp</span><span>ChromaDB</span><span>RAG</span><span>LLMs</span><span>Computer Vision</span>
-                        <span>Python</span><span>OpenCV</span><span>Ollama</span><span>llama.cpp</span><span>ChromaDB</span><span>RAG</span><span>LLMs</span><span>Computer Vision</span>
+                        <span>Python</span><span>OpenCV</span><span>Ollama</span><span>llama.cpp</span><span>ChromaDB</span><span>LangChain</span><span>Agents &amp; Tools</span><span>RAG</span><span>LLMs</span><span>Computer Vision</span>
+                        <span>Python</span><span>OpenCV</span><span>Ollama</span><span>llama.cpp</span><span>ChromaDB</span><span>LangChain</span><span>Agents &amp; Tools</span><span>RAG</span><span>LLMs</span><span>Computer Vision</span>
                     </div>
                 </div>
             </div>
@@ -356,19 +357,42 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8" data-aos="fade-up">
-                        <p class="eyebrow">05 — Galería</p>
+                        <p class="eyebrow">05 — Gallery</p>
                         <h2 id="galeria-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            Vista de la <em class="font-display"><em>plataforma</em></em>
+                            Platform <em class="font-display"><em>view</em></em>
                         </h2>
                     </div>
                 </div>
 
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-aos="fade-up">
-                        <img src="../assets/projects/curador-principal.png" alt="Vista del Curador de Arte Urbano" width="800" height="500" loading="lazy">
+                <div class="gallery-carousel" data-gallery-carousel role="region" aria-roledescription="carousel" aria-label="Project gallery" data-aos="fade-up">
+                    <div class="gallery-carousel-track">
+                        <figure class="gallery-carousel-slide">
+                            <div class="gallery-carousel-media">
+                                <img src="../images/curador-presentacion.png" alt="Curador de Arte Urbano presentation with computer vision, a local LLM, automated reports and document RAG" width="1672" height="941" loading="lazy" draggable="false">
+                            </div>
+                            <figcaption>Local AI for technical and artistic analysis of urban art.</figcaption>
+                        </figure>
+                        <figure class="gallery-carousel-slide">
+                            <div class="gallery-carousel-media">
+                                <img src="../images/curador-principal.png" alt="Curador de Arte Urbano view" width="1024" height="572" loading="lazy" draggable="false">
+                            </div>
+                            <figcaption>Curador de Arte Urbano view</figcaption>
+                        </figure>
+                        <figure class="gallery-carousel-slide">
+                            <div class="gallery-carousel-media">
+                                <img src="https://picsum.photos/seed/curador2/800/500" alt="Color palette analysis of an artwork" width="800" height="500" loading="lazy" draggable="false">
+                            </div>
+                            <figcaption>Color palette analysis of an artwork</figcaption>
+                        </figure>
                     </div>
-                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
-                        <img src="assets/projects/curador-analisis.png" alt="Análisis de paleta de colores de una obra" width="800" height="500" loading="lazy">
+                    <div class="gallery-carousel-controls" hidden>
+                        <span class="gallery-carousel-status" data-carousel-status aria-live="polite" aria-atomic="true">01 / 03</span>
+                        <div class="gallery-carousel-pagination" aria-label="Choose an image"></div>
+                        <div class="gallery-carousel-arrows">
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-autoplay aria-label="Pause slideshow" title="Pause slideshow"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-prev aria-label="Previous image"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-next aria-label="Next image"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -378,16 +402,16 @@
     <footer>
         <div class="footer-big-name" aria-hidden="true">Juan Archila</div>
         <div class="footer-bottom">
-            <p class="mb-0">© 2026 Juan Pablo Archila. Todos los derechos reservados.</p>
+            <p class="mb-0">© 2026 Juan Pablo Archila. All rights reserved.</p>
             <div class="d-flex gap-3">
                 <a href="https://github.com/JuanArchila13" target="_blank" rel="noopener" class="link-editorial" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/juan-pablo-archila-amaya" target="_blank" rel="noopener" class="link-editorial" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p class="mb-0">Detalle del proyecto Curador de Arte Urbano</p>
+            <p class="mb-0">Curador de Arte Urbano project detail</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../template/js/main.js"></script>
+    <script src="../../../template/js/main.js"></script>
 </body>
 </html>

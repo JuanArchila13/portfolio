@@ -8,20 +8,20 @@
     <meta name="description" content="Sistema de gestión y facturación para el Acueducto El Tunjo, desarrollado en Java y MySQL para optimizar la administración de suscriptores y procesos operativos.">
     <meta name="author" content="Juan Pablo Archila">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo.html">
+    <link rel="canonical" href="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo/">
     <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Acueducto El Tunjo — Sistema de Gestión y Facturación">
     <meta property="og:description" content="Sistema de gestión y facturación para optimizar la administración de suscriptores y procesos operativos del Acueducto El Tunjo.">
-    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo.html">
-    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/acueducto-principal.jpg">
+    <meta property="og:url" content="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo/">
+    <meta property="og:image" content="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo/images/acueducto-principal.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Acueducto El Tunjo — Sistema de Gestión y Facturación">
     <meta name="twitter:description" content="Sistema de gestión y facturación para optimizar la administración de suscriptores y procesos operativos del Acueducto El Tunjo.">
-    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/assets/projects/acueducto-principal.jpg">
+    <meta name="twitter:image" content="https://juanarchila13.github.io/PORTAFOLIO/projects/acueducto-el-tunjo/images/acueducto-principal.png">
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23161513'/><text x='50' y='68' font-size='52' font-family='Georgia' fill='%23FAF9F6' text-anchor='middle'>J</text></svg>">
 
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../template/css/styles.css">
+    <link rel="stylesheet" href="../../template/css/styles.css">
 </head>
 
 <body class="grain">
@@ -40,7 +40,7 @@
     <header>
         <nav class="navbar-editorial" aria-label="Navegación del proyecto">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="../../index.html">
                     Juan<em>Archila</em><span style="color:var(--accent)">.</span>
                 </a>
 
@@ -55,11 +55,10 @@
                     <li><a href="#arquitectura">Arquitectura</a></li>
                     <li><a href="#tecnologias">Tecnologías</a></li>
                     <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
                     <li class="nav-lang-item">
                         <span class="lang-current" aria-current="true">ES</span>
                         <span class="lang-separator">/</span>
-                        <a href="en/acueducto-el-tunjo.html" class="lang-link" aria-label="Cambiar a inglés">EN</a>
+                        <a href="en/" class="lang-link" aria-label="Cambiar a inglés">EN</a>
                     </li>
                     <li><button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
                         <span class="knob"><i class="fas fa-sun"></i></span>
@@ -106,7 +105,7 @@
                     <a href="#descripcion" class="btn-editorial btn-solid">
                         Conocer más <i class="fas fa-arrow-down"></i>
                     </a>
-                    <a href="../index.html" class="btn-editorial">
+                    <a href="../../index.html" class="btn-editorial">
                         <i class="fas fa-arrow-left"></i> Volver al portafolio
                     </a>
                 </div>
@@ -306,35 +305,28 @@
                     </div>
                 </div>
 
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-aos="fade-up">
-                        <img src="https://picsum.photos/seed/acueducto1/800/500" alt="Vista del sistema de gestión del Acueducto El Tunjo" width="800" height="500" loading="lazy">
+                <div class="gallery-carousel" data-gallery-carousel role="region" aria-roledescription="carrusel" aria-label="Galería del proyecto" data-aos="fade-up">
+                    <div class="gallery-carousel-track">
+                        <figure class="gallery-carousel-slide">
+                            <div class="gallery-carousel-media">
+                                <img src="https://picsum.photos/seed/acueducto1/800/500" alt="Vista del sistema de gestión del Acueducto El Tunjo" width="800" height="500" loading="lazy" draggable="false">
+                            </div>
+                            <figcaption>Vista del sistema de gestión del Acueducto El Tunjo</figcaption>
+                        </figure>
+                        <figure class="gallery-carousel-slide">
+                            <div class="gallery-carousel-media">
+                                <img src="https://picsum.photos/seed/acueducto2/800/500" alt="Panel de facturación y gestión de suscriptores" width="800" height="500" loading="lazy" draggable="false">
+                            </div>
+                            <figcaption>Panel de facturación y gestión de suscriptores</figcaption>
+                        </figure>
                     </div>
-                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://picsum.photos/seed/acueducto2/800/500" alt="Panel de facturación y gestión de suscriptores" width="800" height="500" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="section-pad bg-subtle" aria-labelledby="contacto-titulo">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-8" data-aos="fade-up">
-                        <p class="eyebrow">06 — Contacto</p>
-                        <h2 id="contacto-titulo" style="font-size: clamp(2rem, 4.5vw, 3rem);">
-                            ¿Preguntas sobre el proyecto <em class="font-display"><em>Acueducto El Tunjo?</em></em>
-                        </h2>
-                        <p class="mt-4" style="color: var(--ink-soft); max-width: 55ch;">
-                            Si quieres conocer más sobre la optimización de procesos, el modelado de datos o la arquitectura del sistema, escríbeme.
-                        </p>
-                        <div class="d-flex flex-wrap gap-3 mt-4">
-                            <a href="mailto:jpabloarchila@gmail.com" class="btn-editorial btn-solid">
-                                <i class="fas fa-envelope"></i> Contactar
-                            </a>
-                            <a href="../index.html" class="btn-editorial">
-                                <i class="fas fa-arrow-left"></i> Volver al portafolio
-                            </a>
+                    <div class="gallery-carousel-controls" hidden>
+                        <span class="gallery-carousel-status" data-carousel-status aria-live="polite" aria-atomic="true">01 / 02</span>
+                        <div class="gallery-carousel-pagination" aria-label="Elegir una imagen"></div>
+                        <div class="gallery-carousel-arrows">
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-autoplay aria-label="Pausar carrusel" title="Pausar carrusel"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-prev aria-label="Imagen anterior"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                            <button type="button" class="gallery-carousel-arrow" data-carousel-next aria-label="Imagen siguiente"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
@@ -355,6 +347,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../template/js/main.js"></script>
+    <script src="../../template/js/main.js"></script>
 </body>
 </html>
